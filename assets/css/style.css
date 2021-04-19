@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 30px;
+
+  font-weight: bold;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url("../images/logo1.jpg") center no-repeat;
+  background-size: auto 80px;
+  max-height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  transition: color 0.2 linear;
+  display: inline-block;
+  margin: 0 80px;
+  color: #212121;
+  margin-right: 0;
+}
+
+.link:hover {
+  color: burlywood;
+}
+
+.intro {
+  min-height: 700px;
+  max-height: 1600px;
+  background: url("../images/background1.jpg") center no-repeat;
+  /*background: url("../images/background_1_1.jpg") center no-repeat;*/
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 4px solid red;
+  border-radius: 20px;
+}
+
+/*menu1*/
+.about {
+}
+.about__tittle {
+  padding: 100px 0 100px 0;
+}
+.tittle {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+}
+.about__body {
+  display: flex;
+  flex-wrap: wrap;
+  height: 60vh;
+}
+.about__body_up {
+  flex: 0 1 100%;
+  display: flex;
+  margin: 0 -8px;
+  justify-content: space-between;
+}
+.about__item {
+  flex: 0 1 33.333%;
+  margin: 0 8px;
+  max-width: 360px;
+}
+.about__item__image {
+  height: 200px;
+  width: 360px;
+}
+.image {
+  max-width: 360px;
+  max-height: 200px;
+  width: 100%;
+  border-radius: 50px;
+}
+.item__text {
+  text-align: center;
+}
+.about__body_down {
+  display: flex;
+  flex: 0 1 100%;
+  margin: 0 -8px;
+  justify-content: space-around;
+}
+.services {
+  /*background: url("../images/background2.jpg") center no-repeat; small back*/
+  background: url("../images/background2.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  max-height: 1600px; /*max width td*/
+}
+.services__body {
+  color: #fff;
+  width: 100%;
+}
+.services__tittle {
+  padding: 50px 0 50px 0;
+}
+.services__info {
+  text-align: center;
+  padding: 0px 0px 70px 0px;
+}
+.services__content {
+  display: flex;
+  justify-content: space-between;
+}
+.services__content__item {
+  height: 350px;
+  width: 300px;
+  background-color: rgb(20, 60, 80);
+  border-radius: 10px;
+  border: 2px solid rgb(26, 175, 250);
+  transition: 0.2s linear;
+}
+.services__content__item:hover {
+  background-color: cadetblue;
+  margin: -20px 0px 0px 0px;
+  transition: 0.1s linear;
+}
+.services__content__item:hover .services__list {
+  margin: 0px 0px 0px -9px;
+  transition: 0.1s linear;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.services__content__item:hover .ul__subtittle {
+  font-weight: bold;
+  transition: 0.1s linear;
+}
+.ul__subtittle {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  font-size: 24px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 99%;
+}
+.services__list li {
+  margin: 10px 15px 0px 35px;
+  position: relative;
+}
+.services__list li:before {
+  content: "";
+  display: inline-block;
+  background: url("../images/galochka.png") left no-repeat;
+  height: 10px;
+  width: 10px;
+  background-size: 100%;
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  top: 9px;
+  left: -15px;
+}
+.services__list:hover {
+}
+
+/*li:before {
+  ul {
+  list-style: none outside;
+
+  list-style-position: outside;
+}
+li {
+  list-style-type: none;
+  margin: 0 0 4px 20px;
+  
+}
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("images/galochka.png") center no-repeat;
+  background-size: 100%;
+  margin: 0 5px 0 10px;
+  list-style-position: outside;
+  padding-inline-start: 0px; /*Доработать момент со списком*/
+.services__footer {
+}
+/*Buttons*/
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.topbtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+.topbtn:hover {
+  background-color: #555;
+}
+/*contacts*/
+.contacts {
+  width: 100%;
+  background-color: #30297c;
+}
+.contacts__body {
+  min-height: 100px;
+  max-height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacts__link {
+  margin: 0;
+  text-decoration: none;
+}
+/*footer*/
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item {
+  background-color: aquamarine;
+  height: 40px;
+  width: 40px;
+}
+
+/*media*/
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .services__content__item {
+    margin: 0px 20px 0px 0px;
+  }
+  .services__content__item:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+  .ul__subtittle {
+    text-align: center;
+  }
+  .services__info {
+    padding: 0px 20px 50px 20px;
+  }
+  .services__tittle {
+    padding-bottom: 30px;
+  }
+  .contacts__body {
+    flex-wrap: wrap;
+  }
+  .contacts__link {
+    margin: 20px 40px 0px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: none;
+  }
+  .services__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__content__item {
+    margin: 0px 0px 26px 0px;
+  }
+  .services__content__item:last-child {
+    margin: 0px 0px 26px 0px;
+  }
+  .contacts {
+    margin: 0px 0px 20px 0px;
+  }
+  .contacts__body {
+    flex-direction: column;
+  }
+  .contacts__link {
+    margin: 20px 0px 0px 0px;
+  }
+}
