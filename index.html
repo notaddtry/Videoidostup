@@ -15,6 +15,8 @@
       href="/assets/images/favicon.ico"
       type="image/x-icon"
     />
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
@@ -57,11 +59,43 @@
       <div class="container"></div>
     </div>
     <!--*The second one box*-->
-    <div class="example">
+    <div class="tech">
       <div class="container">
-        <div class="example__content">
-          <div class="example__subtittle tittle">Витрина работ</div>
-          <div class="example__vidjet"></div>
+        <div class="tech__content">
+          <div class="tech__subtittle tittle">Технологии</div>
+          <div class="tech__swiper swiper-container">
+            <div class="tech__swiper_wrapper swiper-wrapper">
+              <div class="tech__swiper_slide swiper-slide">
+                <div class="tech__swiper_image">
+                  <img
+                    src="assets/images/partners/Ajax_Systems_logo.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="tech__swiper_image">
+                  <img src="assets/images/partners/hilogo.svg" alt="" />
+                </div>
+                <div class="tech__swiper_image">
+                  <img src="assets/images/partners/logo (1).png" alt="" />
+                </div>
+                <div class="tech__swiper_image">
+                  <img src="assets/images/partners/logo-jablotron.svg" alt="" />
+                </div>
+              </div>
+              <div class="tech__swiper_slide swiper-slide">
+                <div class="tech__swiper_image">
+                  <img src="assets/images/partners/axis_logo.png" alt="" />
+                </div>
+              </div>
+              <div class="tech__swiper_slide swiper-slide">
+                <div class="tech__swiper_image">
+                  <img src="assets/images/partners/hikvision_logo.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -153,6 +187,6 @@
     </footer>
     <div class="topbtn btn" id="myBtn" onclick="topFunction()"></div>
   </body>
-
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </html>

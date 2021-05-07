@@ -122,3 +122,11 @@ if (menuLinks.length > 0) {
     }
   }
 }
+
+new Swiper(".tech__swiper", {
+  //arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})

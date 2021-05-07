@@ -181,19 +181,50 @@ h6 {
   justify-content: space-around;
 }
 /*example*/
-.example {
+.tech {
   background-color: rgb(158, 182, 211);
   width: 100%;
   height: 600px;
 }
-.example__content {
+
+.tech__content {
 }
-.example__subtittle {
-  padding: 50px 0;
+.tech__subtittle {
   color: #fff;
+  padding: 30px 0px;
 }
-.example__vidjet {
+
+.tech__swiper {
+  height: 400px;
+  display: flex;
 }
+
+.tech__swiper_wrapper {
+}
+
+.tech__swiper_slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: middle;
+}
+
+.tech__swiper_image {
+  width: 400px;
+  height: 200px;
+  margin: 0 70px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.tech__swiper_image img {
+  max-width: 100%;
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+
 /*services*/
 .services {
   background: url("../images/background_2_2.jpg") center no-repeat;
