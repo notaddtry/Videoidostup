@@ -129,4 +129,10 @@ new Swiper(".tech__swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  //navigation
+  //bullets,progressbar
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 })
