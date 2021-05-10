@@ -57,6 +57,7 @@ h6 {
   padding: 0 30px;
 }
 .logo {
+  display: block;
   position: relative;
   z-index: 5;
   width: 100px;
@@ -95,7 +96,7 @@ h6 {
   width: 2px;
   height: 40px;
   top: 17px;
-  right: -6px;
+  right: -4px;
 }
 .header__link:last-child::after {
   content: "";
@@ -112,9 +113,14 @@ h6 {
 }
 
 .header__link:hover {
-  background-color: rgb(146, 170, 199);
+  /*background-color: rgb(146, 170, 199);
   border-radius: 10px;
-  box-shadow: 3px 3px rgb(136, 164, 199);
+  box-shadow: 3px 3px rgb(136, 164, 199);*/
+  border-radius: 10px;
+  box-shadow: inset -2px -2px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.header__link:active {
+  box-shadow: inset 2px 2px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .about {
@@ -184,23 +190,23 @@ h6 {
 .tech {
   background-color: rgb(158, 182, 211);
   width: 100%;
-  height: 600px;
+  min-height: 500px;
 }
 
 .tech__content {
 }
 .tech__subtittle {
   color: #fff;
-  padding: 30px 0px;
+  padding: 30px 0px 0px 0px;
 }
 
 .tech__swiper {
   height: 400px;
+  width: 100%;
   display: flex;
 }
 
 .tech__swiper_wrapper {
-  width: 800px;
 }
 
 .tech__swiper_slide {
@@ -208,12 +214,11 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 800px;
 }
 
 .tech__swiper_image {
   width: 300px;
-  height: 200px;
+  height: 100px;
   margin: 0 60px;
   align-items: center;
   justify-content: center;
@@ -226,10 +231,9 @@ h6 {
 .tech__swiper .swiper-button-prev::after,
 .tech__swiper .swiper-button-next::after {
   color: #fff;
-  font-size: 90px;
+  font-size: 80px;
 }
-
-.swiper-button-next {
+.tech__swiper .swiper-pagination {
 }
 .tech__swiper .swiper-pagination-bullet {
   background-color: #fff;
@@ -242,8 +246,8 @@ h6 {
 .services {
   background: url("../images/background_2_2.jpg") center no-repeat;
   background-size: cover;
-  min-height: 1000px;
-  max-height: 1600px; /*max width td*/
+  min-height: 800px;
+  max-height: 1600px;
 }
 .services__body {
   color: #fff;
@@ -357,6 +361,10 @@ h6 {
 .contacts__link {
   margin: 0;
   text-decoration: none;
+  transition: color 0.5s linear;
+}
+.contacts__link:hover {
+  color: blue;
 }
 /*footer*/
 .footer__content {
@@ -370,7 +378,7 @@ h6 {
 }
 
 /*media*/
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .container {
     max-width: 970px;
   }
@@ -378,7 +386,7 @@ h6 {
     width: 70%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .header {
     position: fixed;
     z-index: 99;
@@ -408,31 +416,16 @@ h6 {
     flex-wrap: wrap;
   }
   .contacts__link {
-    margin: 20px 40px 0px 40px;
+    margin: 10px 40px 10px 40px;
   }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: none;
+  .tech__swiper_image {
+    width: 200px;
+    height: 160px;
+    margin: 0 20px;
   }
-  .services__content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .services__content__item {
-    margin: 0px 0px 26px 0px;
-  }
-  .services__content__item:last-child {
-    margin: 0px 0px 26px 0px;
-  }
-  .contacts {
-    margin: 0px 0px 20px 0px;
-  }
-  .contacts__body {
-    flex-direction: column;
-  }
-  .contacts__link {
-    margin: 20px 0px 0px 0px;
+  .tech__swiper .swiper-button-prev::after,
+  .tech__swiper .swiper-button-next::after {
+    font-size: 60px;
   }
 }
 @media (max-width: 767px) {
@@ -502,7 +495,7 @@ h6 {
     width: 100%;
     top: 0;
     left: 0;
-    height: 100px;
+    height: 70px;
     background-color: rgb(158, 182, 211);
     z-index: 2;
   }
@@ -513,5 +506,65 @@ h6 {
   }
   .header__link:after {
     display: none;
+  }
+  .container {
+    max-width: none;
+    max-height: 100%;
+  }
+  .header {
+    height: 70px;
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+    background-size: auto 50px;
+  }
+  .services__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__content__item {
+    margin: 0px 0px 26px 0px;
+  }
+  .services__content__item:last-child {
+    margin: 0px 0px 26px 0px;
+  }
+  .contacts {
+    margin: 0px 0px 20px 0px;
+  }
+  .contacts__body {
+    flex-direction: column;
+  }
+  .contacts__link {
+    margin: 10px 0px 10px 0px;
+  }
+  .tech__swiper_image {
+    width: 180px;
+    height: 140px;
+    margin: 0 40px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .tech__swiper .swiper-button-prev::after,
+  .tech__swiper .swiper-button-next::after {
+    font-size: 40px;
+  }
+}
+@media (max-width: 649px) {
+  .tech__subtittle {
+    padding: 30px 0 0 0;
+  }
+  .tech__swiper_slide {
+    justify-content: center;
+  }
+  .tech__swiper_image {
+    width: 90px;
+    height: 50px;
+    margin: 0px 30px;
+  }
+  .tech__swiper_image:first-child {
+    margin-top: 0px;
   }
 }
