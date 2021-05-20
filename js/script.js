@@ -1,4 +1,4 @@
-//IsMobile Check
+//--------------------------------------------------IsMobile Check
 
 var isMobile = {
   Android: function () {
@@ -32,9 +32,8 @@ if (isMobile.any()) {
 } else {
   document.body.classList.add("_dekstop")
 }
-//-----------------------------------
 
-//scrollOnTop
+//--------------------------------------------------scrollOnTop
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -50,13 +49,12 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0 // For Safari
-  document.querySelector(".header").scrollIntoView({
+  document.getElementById("top").scrollIntoView({
     behavior: "smooth",
     block: "start",
   }) // For Chrome, Firefox, IE and Opera
 }
-
-// Burger menu
+// ---------------------------------------------------------Burger menu
 
 const IconMenu = document.querySelector(".menu__icon")
 const menuBody = document.querySelector(".header__nav")
@@ -68,7 +66,7 @@ if (IconMenu) {
   })
 }
 
-//Scrolling clicking
+//------------------------------------------------SCROLLING
 
 const menuLinks = document.querySelectorAll(".header__link[data-goto]")
 if (menuLinks.length > 0) {
@@ -83,6 +81,7 @@ if (menuLinks.length > 0) {
       document.querySelector(menuLink.dataset.goto)
     ) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto)
+      const gotoBlockTop = gotoBlock.getBoundingClientRect().top + pageYOffset
       const gotoBlockValue =
         gotoBlock.getBoundingClientRect().top +
         pageYOffset -
@@ -94,15 +93,23 @@ if (menuLinks.length > 0) {
         menuBody.classList.remove("_active")
       }
 
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: "smooth",
-      })
-      e.preventDefault()
+      if (isMobile.any()) {
+        window.scrollTo({
+          top: gotoBlockValue,
+          behavior: "smooth",
+        })
+        e.preventDefault()
+      } else {
+        window.scrollTo({
+          behavior: "smooth",
+          top: gotoBlockTop,
+        })
+      }
     }
   }
 }
 
+// --------------------------------SWIPER------------------------------
 new Swiper(".tech__swiper", {
   //arrows
   navigation: {
@@ -116,3 +123,9 @@ new Swiper(".tech__swiper", {
     clickable: true,
   },
 })
+
+//----------------------------------NEWTAB OPENER-------------------
+function openInNewTab(url) {
+  var win = window.open(url, "_blank")
+  win.focus()
+}

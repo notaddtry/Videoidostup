@@ -1,1 +1,37 @@
 /images
+<div class="services__content">
+            <div class="services__content__item">
+              <p class="ul__subtittle icon-cog">Настройка</p>
+              <ul class="services__list">
+                <li class="icon-checkmark">Платных парковок</li>
+                <li class="icon-checkmark">Автоматических ворот</li>
+                <li class="icon-checkmark">Электрики/освещения</li>
+                <li class="icon-checkmark">Локальных сетей для офиса</li>
+                <li class="icon-checkmark">Учета рабочего времени</li>
+              </ul>
+            </div>
+            <div class="services__content__item">
+              <p class="ul__subtittle icon-task">Установка</p>
+              <ul class="services__list">
+                <li class="icon-checkmark">Видеонаблюдений</li>
+                <li class="icon-checkmark">Систем доступа</li>
+                <li class="icon-checkmark">Домофонов</li>
+                <li class="icon-checkmark">Сигнализаций</li>
+                <li class="icon-checkmark">Турникетов</li>
+                <li class="icon-checkmark">Шлагбаумов</li>
+                <li class="icon-checkmark">Наружной рекламы</li>
+              </ul>
+            </div>
+            <div class="services__content__item">
+              <p class="ul__subtittle icon-award">Дополнительные услуги</p>
+              <ul class="services__list">
+                <li class="icon-checkmark">Озвучивание помещений</li>
+                <li class="icon-checkmark">
+                  Усиление сотовой связи/мобильного интернета
+                </li>
+                <li class="icon-checkmark">
+                  Оформление проектной документации
+                </li>
+              </ul>
+            </div>
+          </div>
