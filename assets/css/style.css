@@ -153,85 +153,37 @@ li {
 .services__content {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .services__content__item_1,
 .services__content__item_2 {
   /*-------------------------------------------------------TODO*/
-  max-width: 700px;
+  width: 400px;
+  max-height: 80px;
   margin: 30px 20px;
-  background-color: rgba(137, 164, 255, 0.9);
+  background-color: #fff;
   color: #4d4b4b;
-  border: 1px solid #999999;
-  border-radius: 10px 10px;
-  -moz-border-radius: 10px 10px;
-  -webkit-border-radius: 10px 10px;
-  box-shadow: 2px 2px 3px rgb(65, 64, 64);
-  -webkit-box-shadow: 2px 2px 3px rgb(65, 64, 64);
-  -moz-box-shadow: 2px 2px 3px rgb(65, 64, 64);
-}
-.services__content__item_1 {
-}
-.services__content__item_2 {
+  border-radius: 50px;
+  padding: 10px;
 }
 
-.services__list_1 {
+.ul__subtittle_1,
+.ul__subtittle_2 {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 22px;
 }
-.services__list_1 li {
-  width: 40%;
+.services__content__item_1:hover {
+  transition: 1.5s;
+  max-height: 600px;
 }
-.services__list_2 {
-}
-.services__list_1 li,
-.services__list_2 li {
-  margin: 0px 15px 15px 37px;
-  position: relative;
-  font-size: 20px;
-}
-.icon-checkmark:before {
-  position: absolute;
-  left: -24px;
-  top: 4px;
-}
-/*.services__content__item_1:hover .services__list_1 {
-  display: block;
-  flex-grow: 0;
-}
-.services__content__item_2:hover .services__list_2 {
-  display: block;
+.services__content__item_1:hover .services__list_1 {
+  opacity: 1;
+  transition: 3s;
 }
 .services__list_1,
 .services__list_2 {
-  display: none;
-  flex-grow: 0.5;
-  flex-basis: 0;
-}*/
-
-.ul__subtittle {
-  position: relative;
-  padding: 0;
-  display: flex;
-  font-size: 24px;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid white;
-  border-radius: 10px;
-  width: 99%;
-  height: 20%;
-  margin: 0px 0px 15px 0px;
-}
-.ul__subtittle_text {
-  position: relative;
-}
-
-.icon-task:before,
-.icon-cog:before {
-  position: absolute;
-  left: -40px;
-  top: 4px;
-  font-size: 30px;
+  opacity: 0;
 }
 /*---------------------------------------------TECH----------------*/
 
