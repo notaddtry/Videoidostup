@@ -174,16 +174,25 @@ li {
   font-size: 22px;
 }
 .services__content__item_1:hover {
-  transition: 1.5s;
+  transition: 1.2s;
   max-height: 600px;
 }
 .services__content__item_1:hover .services__list_1 {
+  width: 100%;
   opacity: 1;
-  transition: 3s;
+  transition: opacity 0.3s ease 0.3s;
+}
+.services__list_1 li {
+  opacity: 1;
+}
+.services__content__item_1:hover .services__list_1 li {
+  opacity: 1;
 }
 .services__list_1,
 .services__list_2 {
+  overflow: hidden;
   opacity: 0;
+  width: 0;
 }
 /*---------------------------------------------TECH----------------*/
 
