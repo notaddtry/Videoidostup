@@ -137,7 +137,7 @@ li {
 .services {
   background: url("../images/background_2_1.jpg") center no-repeat;
   background-size: cover;
-  min-height: 800px;
+  min-height: 500px;
   max-height: 1600px;
 }
 .services__body {
@@ -158,48 +158,87 @@ li {
 .services__content__item_1,
 .services__content__item_2 {
   /*-------------------------------------------------------TODO*/
-  width: 400px;
-  max-height: 80px;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
   margin: 30px 20px;
   background-color: #fff;
   color: #4d4b4b;
-  border-radius: 50px;
+  border-radius: 90px;
   padding: 10px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services__content__item_1 .ul__subtittle_1::after {
 }
 
 .ul__subtittle_1,
 .ul__subtittle_2 {
-  display: flex;
-  justify-content: center;
+  width: 150px;
+  height: 100%;
+  display: inline-flex;
+  margin: 20px;
   font-size: 22px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
 }
-.services__content__item_1:hover {
-  transition: 1.2s;
-  max-height: 600px;
+.ul__subtittle_1::after {
+  content: "";
+  height: 110px;
+  width: 3px;
+  opacity: 0;
+  background-color: #4d4b4b;
+  position: absolute;
+  left: 70%;
 }
-.services__content__item_1:hover .services__list_1 {
-  width: 100%;
-  opacity: 1;
-  transition: opacity 0.3s ease 0.3s;
-}
-.services__list_1 li {
-  opacity: 1;
-}
-.services__content__item_1:hover .services__list_1 li {
-  opacity: 1;
-}
+
 .services__list_1,
 .services__list_2 {
   overflow: hidden;
   opacity: 0;
   width: 0;
 }
+.services__list_1 li {
+  display: inline-block;
+  margin: 13px;
+}
+.services__content__item_1:hover {
+  min-width: 1200px;
+  transition: min-width 1s;
+}
+.services__content__item_1:hover .ul__subtittle_1 {
+  text-align: left;
+}
+.services__content__item_1:hover .ul__subtittle_1::after {
+  opacity: 1;
+  left: 100%;
+  transition: opacity 2s 0.3s, left 1s;
+}
+.services__content__item_1:hover .services__content__item_1 {
+  width: 0%;
+}
+.services__content__item_1:hover .services__list_1 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 1;
+  transition: opacity 5s;
+}
+
 /*---------------------------------------------TECH----------------*/
 
 .tech {
   background-color: rgb(158, 182, 211);
   width: 100%;
-  min-height: 400px;
+  min-height: 200px;
+
+  max-height: 800px;
 }
 
 .tech__content {
