@@ -3,33 +3,33 @@
             <div class="services__content__item">
               <p class="ul__subtittle icon-cog">Настройка</p>
               <ul class="services__list">
-                <li class="icon-checkmark">Платных парковок</li>
-                <li class="icon-checkmark">Автоматических ворот</li>
-                <li class="icon-checkmark">Электрики/освещения</li>
-                <li class="icon-checkmark">Локальных сетей для офиса</li>
-                <li class="icon-checkmark">Учета рабочего времени</li>
+                <li class="">Платных парковок</li>
+                <li class="">Автоматических ворот</li>
+                <li class="">Электрики/освещения</li>
+                <li class="">Локальных сетей для офиса</li>
+                <li class="">Учета рабочего времени</li>
               </ul>
             </div>
             <div class="services__content__item">
               <p class="ul__subtittle icon-task">Установка</p>
               <ul class="services__list">
-                <li class="icon-checkmark">Видеонаблюдений</li>
-                <li class="icon-checkmark">Систем доступа</li>
-                <li class="icon-checkmark">Домофонов</li>
-                <li class="icon-checkmark">Сигнализаций</li>
-                <li class="icon-checkmark">Турникетов</li>
-                <li class="icon-checkmark">Шлагбаумов</li>
-                <li class="icon-checkmark">Наружной рекламы</li>
+                <li class="">Видеонаблюдений</li>
+                <li class="">Систем доступа</li>
+                <li class="">Домофонов</li>
+                <li class="">Сигнализаций</li>
+                <li class="">Турникетов</li>
+                <li class="">Шлагбаумов</li>
+                <li class="">Наружной рекламы</li>
               </ul>
             </div>
             <div class="services__content__item">
               <p class="ul__subtittle icon-award">Дополнительные услуги</p>
               <ul class="services__list">
-                <li class="icon-checkmark">Озвучивание помещений</li>
-                <li class="icon-checkmark">
+                <li class="">Озвучивание помещений</li>
+                <li class="">
                   Усиление сотовой связи/мобильного интернета
                 </li>
-                <li class="icon-checkmark">
+                <li class="">
                   Оформление проектной документации
                 </li>
               </ul>
