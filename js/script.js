@@ -54,6 +54,7 @@ function topFunction() {
     block: "start",
   }) // For Chrome, Firefox, IE and Opera
 }
+
 // ---------------------------------------------------------Burger menu
 
 const IconMenu = document.querySelector(".menu__icon")
@@ -128,4 +129,12 @@ new Swiper(".tech__swiper", {
 function openInNewTab(url) {
   var win = window.open(url, "_blank")
   win.focus()
+}
+
+//---------------------------------------SERVICES HOVER---------------
+function changeItem() {
+  document.getElementById("services_1").classList.toggle("hover__item")
+}
+function rechangeItem() {
+  document.getElementById("services_1").classList.toggle("hover__item")
 }

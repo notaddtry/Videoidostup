@@ -14,6 +14,11 @@ body {
 ._lock {
   overflow: hidden;
 }
+.hover__item {
+  opacity: 0;
+  transition: opacity 0.4s;
+  overflow: hidden;
+}
 
 ul {
   list-style: none;
@@ -22,7 +27,7 @@ ul {
 }
 li {
   list-style: none;
-  letter-spacing: 0.35pt;
+  letter-spacing: 0.5pt;
 }
 .link {
   text-decoration: none;
@@ -143,169 +148,31 @@ li {
 }
 .services__body {
   width: 100%;
+  min-height: 500px;
+  max-height: 1600px;
 }
-.services__tittle {
-  padding: 50px 0 50px 0;
-}
-.services__info {
-  text-align: center;
-  padding: 0px 0px 50px 0px;
-}
+
 .services__content {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.services__content__item_1,
-.services__content__item_2 {
-  /*-------------------------------------------------------TODO*/
-  min-width: 150px;
-  max-width: 150px;
-  min-height: 150px;
-  max-height: 150px;
-
-  background-color: #fff;
-  color: #4d4b4b;
-  border-radius: 90px;
-
-  opacity: 1;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  transition: opacity 0.4s, text-align 2s;
-  overflow: hidden;
-  position: relative;
-  z-index: 99;
+  height: 100%;
+  flex-wrap: wrap;
 }
 
-.ul__subtittle_1,
-.ul__subtittle_2 {
-  background-color: #fff;
-  min-width: 150px;
-  min-height: 150px;
-  max-width: 150px;
-  max-height: 150px;
-  padding: 0 25px;
+.services__list {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services__list li {
   display: inline-flex;
-
   font-size: 22px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  z-index: 99;
-}
-
-.ul__subtittle_1::after {
-  content: "";
-  height: 110px;
-  width: 3px;
-  opacity: 0;
-  background-color: #4d4b4b;
-  position: absolute;
-  left: 50%;
-}
-
-.services__list_1,
-.services__list_2 {
-  overflow: hidden;
-  width: 990px;
-  min-height: 150px;
-  max-height: 150px;
-  position: absolute;
-  opacity: 0;
-  transform: translate(-110%);
-  transition: transform;
-  z-index: 1;
-}
-.services__list_1 li {
-  display: inline-block;
-  height: 20px;
-
   font-weight: bold;
-  margin: auto 0;
-  padding: 0px 10px;
-}
-
-.services__content__item_1:hover {
-  min-width: 1200px;
-  transition: min-width 1s ease;
-  justify-content: flex-start;
-}
-.services__content__item_1:hover .ul__subtittle_1 {
-  text-align: left;
-}
-
-.services__content__item_1:hover .ul__subtittle_1::after {
-  opacity: 1;
-  left: 85%;
-  transition: opacity 2s 0.3s, left 1s;
-}
-.services__content__item_1:hover + .services__content__item_2 {
-  opacity: 0;
-  transition: 0.4s;
-  overflow: hidden;
-}
-.services__content__item_1:hover .services__list_1 {
-  display: flex;
-
-  padding: 20px;
-  padding-left: 200px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  opacity: 1;
-  transform: translate(0);
-  transition: opacity 2s;
-}
-/*-----------------------------------------------second block*/
-.ul__subtittle_2::before {
-  content: "";
-  height: 110px;
-  width: 3px;
-  opacity: 0;
-  background-color: #4d4b4b;
-  position: absolute;
-  left: 50%;
-}
-
-.services__list_2 li {
-  display: inline-block;
-  height: 20px;
-
-  font-weight: bold;
-  margin: auto 0;
-  padding: 0px 10px;
-}
-
-.services__content__item_2:hover {
-  min-width: 1200px;
-  transition: min-width 1s ease;
-  justify-content: flex-end;
-}
-.services__content__item_2:hover .ul__subtittle_2 {
-  text-align: right;
-}
-
-.services__content__item_2:hover .ul__subtittle_2::after {
-  opacity: 1;
-  left: 85%;
-  transition: opacity 2s 0.3s, left 1s;
-}
-.services__content__item_2:hover .services__content__item_1 {
-  opacity: 0;
-  transition: 0.4s;
-  /*https://ru.stackoverflow.com/questions/293281/%D0%9A%D0%B0%D0%BA-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BD%D0%B0-%D0%BE%D0%B4%D0%B8%D0%BD-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82-%D0%BC%D0%B5%D0%BD%D1%8F%D1%82%D1%8C-%D1%81%D1%82%D0%B8%D0%BB%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B3%D0%BE-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0*/
-}
-.services__content__item_2:hover .services__list_2 {
-  display: flex;
-
-  padding: 20px;
-  padding-left: 200px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  opacity: 1;
-  transform: translate(0);
-  transition: opacity 2s;
+  padding: 7px;
+  margin: 53px;
+  background-color: rgba(42, 73, 119, 0.6);
+  border-radius: 20px;
 }
 
 /*---------------------------------------------TECH----------------*/
