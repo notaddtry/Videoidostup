@@ -388,6 +388,7 @@ li {
 
 .icon-map::before {
   position: absolute;
+  color: #fff;
   left: -45px;
   top: -3px;
   font-size: 30px;

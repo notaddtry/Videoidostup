@@ -123,6 +123,7 @@ new Swiper(".tech__swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  loop: true,
 })
 
 //----------------------------------NEWTAB OPENER-------------------
