@@ -49,7 +49,6 @@ li {
 .header__inner {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   padding: 0 30px;
 }
@@ -65,10 +64,18 @@ li {
   max-height: 100%;
 }
 .header__menu {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.header__info {
+  width: 20%;
+  display: flex;
+  text-align: right;
+}
+.header__info span {
+  display: inline-block;
 }
 .header__nav {
   height: 70px;
