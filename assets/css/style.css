@@ -59,29 +59,41 @@ li {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: url("../images/logo.jpg") right no-repeat;
+  background: url("../images/logo.png") right no-repeat;
   background-size: auto 70px;
   max-height: 100%;
 }
 .header__menu {
-  width: 50%;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 .header__info {
-  width: 20%;
+  flex: 1 1 30%;
+  height: 100px;
   display: flex;
   text-align: right;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header__info h3 {
+  margin: 0;
+  height: 50%;
+  display: inline-flex;
+  text-align: center;
+  align-items: flex-end;
 }
 .header__info span {
-  display: inline-block;
+  height: 50%;
+  display: inline-flex;
 }
 .header__nav {
   height: 70px;
-  width: 50%;
+  flex: 1 1 30%;
   display: flex;
   align-items: center;
+  margin: 0 20px;
 }
 .header__link {
   display: flex;
@@ -117,7 +129,7 @@ li {
   box-shadow: inset 2px 2px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .header__callback {
-  margin: 0px 0px 0px 20px;
+  flex: 1 1 20%;
 }
 .callback__wrapper {
   display: flex;
@@ -439,6 +451,9 @@ li {
   }
   .header__nav {
     width: 70%;
+  }
+  .header__callback {
+    flex: 1 1 30%;
   }
 }
 @media (max-width: 991px) {
