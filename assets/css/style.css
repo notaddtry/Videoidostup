@@ -3,8 +3,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.05em;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
+  background: url('/assets/images/bg.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .container {
   width: 100%;
@@ -43,7 +49,7 @@ li {
   font-size: 20px;
   font-weight: 600;
   margin: 0 auto;
-  background-color: rgb(158, 182, 211);
+  background-color: #6c6c6c;
 }
 
 .header__inner {
@@ -59,7 +65,7 @@ li {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: url("../images/logo.png") right no-repeat;
+  background: url('../images/logo.png') right no-repeat;
   background-size: auto 70px;
   max-height: 100%;
 }
@@ -114,7 +120,7 @@ li {
   right: -4px;
 }*/
 .header__link:last-child::after {
-  content: "";
+  content: '';
   display: none;
 }
 .header__link:last-child {
@@ -141,12 +147,12 @@ li {
 .callback__link {
   margin: 0;
   text-decoration: none;
-  transition: color 0.5s linear;
+  transition: color 0.1s linear;
   width: 100%;
   letter-spacing: 0.03em;
 }
 .callback__link:hover {
-  color: blue;
+  color: #b6b6b6;
 }
 .icon-phone:before {
   margin: 0px 14px 0px 0px;
@@ -160,7 +166,7 @@ li {
 /*---------------------------------------------SERVICES------*/
 
 .services {
-  background: url("../images/background_2_1.jpg") center no-repeat;
+  /* background: url("../images/background_2_1.jpg") center no-repeat; */
   background-size: cover;
 
   max-height: 1600px;
@@ -190,7 +196,7 @@ li {
   font-weight: bold;
   padding: 7px;
   margin: 53px;
-  background-color: rgba(42, 73, 119, 0.65);
+
   border-radius: 20px;
   cursor: pointer;
   align-items: center;
@@ -226,7 +232,7 @@ li {
 /*---------------------------------------------TECH----------------*/
 
 .tech {
-  background-color: rgb(158, 182, 211);
+  background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   min-height: 200px;
 
@@ -287,7 +293,7 @@ li {
 .about {
   min-height: 430px;
   max-height: 1600px;
-  background: url("../images/background_2_2.jpg") center no-repeat;
+  /* background: url("../images/background_2_2.jpg") center no-repeat; */
   background-size: cover;
   margin: auto;
 }
@@ -316,40 +322,10 @@ li {
   font-size: 24px;
   padding: 10px;
 }
-.about__items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about__item {
-  position: relative;
-  height: 100px;
-  margin: 5px 0;
-  width: 1000px;
-  background-color: rgba(42, 73, 119, 0.5);
-}
-.about__item span {
-  display: inline-block;
-  margin: 10px 10px;
-}
-.icon-handshake::before,
-.icon-cogs::before,
-.icon-global::before {
-  position: absolute;
-  left: -70px;
-  top: 30px;
-  font-size: 40px;
-}
-.icon-handshake::before {
-}
-.icon-cogs::before {
-}
-.icon-global::before {
-  left: -65px;
-}
+
 /*-------------------------------------------Buttons-------------*/
 .btn {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 .topbtn {
@@ -372,7 +348,7 @@ li {
   transition: 0.2s linear;
 }
 .topbtn:hover {
-  background-color: rgb(109, 137, 173);
+  background-color: #b6b6b6;
 }
 .icon-up::before {
   font-size: 40px;
@@ -383,7 +359,7 @@ li {
 /*contacts*/
 .contacts {
   width: 100%;
-  background-color: rgb(158, 182, 211);
+  background-color: #6c6c6c;
 }
 .contacts__body {
   display: flex;
@@ -424,20 +400,15 @@ li {
   position: relative;
   margin: 0;
   text-decoration: none;
-  transition: color 0.5s linear;
+  transition: color 0.1s linear;
 }
 .contacts__link:hover {
-  color: blue;
+  color: #b6b6b6;
 }
 /*footer*/
 .footer__content {
   display: flex;
   justify-content: space-between;
-}
-.footer__item {
-  background-color: aquamarine;
-  height: 40px;
-  width: 40px;
 }
 
 /*media*/
@@ -548,7 +519,7 @@ li {
   }
   .menu__icon::before,
   .menu__icon::after {
-    content: "";
+    content: '';
   }
   .menu__icon::before {
     top: 0;
@@ -593,7 +564,7 @@ li {
     left: 0;
   }
   .header__nav::before {
-    content: "";
+    content: '';
     position: fixed;
     width: 100%;
     top: 0;

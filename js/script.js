@@ -28,9 +28,9 @@ var isMobile = {
 }
 
 if (isMobile.any()) {
-  document.body.classList.add("_touch")
+  document.body.classList.add('_touch')
 } else {
-  document.body.classList.add("_dekstop")
+  document.body.classList.add('_dekstop')
 }
 
 //--------------------------------------------------scrollOnTop
@@ -41,38 +41,38 @@ window.onscroll = function () {
 }
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block"
+    document.getElementById('myBtn').style.display = 'block'
   } else {
-    document.getElementById("myBtn").style.display = "none"
+    document.getElementById('myBtn').style.display = 'none'
   }
 }
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0 // For Safari
-  document.getElementById("top").scrollIntoView({
-    behavior: "smooth",
-    block: "start",
+  document.getElementById('top').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
   }) // For Chrome, Firefox, IE and Opera
 }
 
 // ---------------------------------------------------------Burger menu
 
-const IconMenu = document.querySelector(".menu__icon")
-const menuBody = document.querySelector(".header__nav")
+const IconMenu = document.querySelector('.menu__icon')
+const menuBody = document.querySelector('.header__nav')
 if (IconMenu) {
-  IconMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle("_lock")
-    IconMenu.classList.toggle("_active")
-    menuBody.classList.toggle("_active")
+  IconMenu.addEventListener('click', function (e) {
+    document.body.classList.toggle('_lock')
+    IconMenu.classList.toggle('_active')
+    menuBody.classList.toggle('_active')
   })
 }
 
 //------------------------------------------------SCROLLING
 
-const menuLinks = document.querySelectorAll(".header__link[data-goto]")
+const menuLinks = document.querySelectorAll('.header__link[data-goto]')
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener("click", onMenuLinkClick)
+    menuLink.addEventListener('click', onMenuLinkClick)
   })
 
   function onMenuLinkClick(e) {
@@ -86,23 +86,23 @@ if (menuLinks.length > 0) {
       const gotoBlockValue =
         gotoBlock.getBoundingClientRect().top +
         pageYOffset -
-        document.querySelector(".header").offsetHeight
+        document.querySelector('.header').offsetHeight
 
-      if (IconMenu.classList.contains("_active")) {
-        document.body.classList.remove("_lock")
-        IconMenu.classList.remove("_active")
-        menuBody.classList.remove("_active")
+      if (IconMenu.classList.contains('_active')) {
+        document.body.classList.remove('_lock')
+        IconMenu.classList.remove('_active')
+        menuBody.classList.remove('_active')
       }
 
       if (isMobile.any()) {
         window.scrollTo({
           top: gotoBlockValue,
-          behavior: "smooth",
+          behavior: 'smooth',
         })
         e.preventDefault()
       } else {
         window.scrollTo({
-          behavior: "smooth",
+          behavior: 'smooth',
           top: gotoBlockTop,
         })
       }
@@ -111,16 +111,16 @@ if (menuLinks.length > 0) {
 }
 
 // --------------------------------SWIPER------------------------------
-new Swiper(".tech__swiper", {
+new Swiper('.tech__swiper', {
   //arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   //navigation
   //bullets,progressbar
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   loop: true,
@@ -128,14 +128,14 @@ new Swiper(".tech__swiper", {
 
 //----------------------------------NEWTAB OPENER-------------------
 function openInNewTab(url) {
-  var win = window.open(url, "_blank")
+  var win = window.open(url, '_blank')
   win.focus()
 }
 
 //---------------------------------------SERVICES HOVER---------------
 function changeItem() {
-  document.getElementById("services_1").classList.toggle("hover__item")
+  document.getElementById('services_1').classList.toggle('hover__item')
 }
 function rechangeItem() {
-  document.getElementById("services_1").classList.toggle("hover__item")
+  document.getElementById('services_1').classList.toggle('hover__item')
 }
